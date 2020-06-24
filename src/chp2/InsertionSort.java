@@ -22,7 +22,6 @@ public final class InsertionSort {
 
 
     public static void main(String[] args) throws Exception {
-
         SortTest.IntArrayTest("chp2.InsertionSort",5,100,-100,100);
 //        Random random = new Random();
 //        int length;

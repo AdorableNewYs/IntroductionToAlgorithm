@@ -6,8 +6,6 @@ public final class CountingSort {
     //不是原算法，供测试用
     public static void countingSort(int[] A){
         int len = A.length;
-
-
         int k = 0;
         for (int i = 0; i < len; i++) k = k < A[i] ? A[i] : k;
         //∀x∈A,x∈[0,k]
