@@ -2,7 +2,7 @@ package chp6;
 
 import test.SortTest;
 
-public class HeapSort {
+public final class HeapSort {
 
 //    private static class Heap{
 //        private int[] Arr;

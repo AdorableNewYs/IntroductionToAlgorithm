@@ -4,7 +4,7 @@ import test.SortTest;
 
 import java.util.Random;
 
-public class QuickSort {
+public final class QuickSort {
 
     public static void quickSort(int[] A){
         quickSort(A,0,A.length - 1);
@@ -18,7 +18,7 @@ public class QuickSort {
         }
     }
 
-    private static int partition(int[] A,int p, int r){
+    public static int partition(int[] A,int p, int r){
         int j = p - 1,k = A[r];
         for (int i = p; i < r; i++) {
             //降序<= , 升序 >=
@@ -34,7 +34,7 @@ public class QuickSort {
     }
 
     //随机化版本
-    private static int random_partition(int[] A,int p,int r){
+    public static int random_partition(int[] A,int p,int r){
         int k_index = Math.abs(new Random().nextInt()) % (r - p + 1) + p;
         int temp = A[k_index];
         A[k_index] = A[r];
@@ -42,7 +42,7 @@ public class QuickSort {
         return partition(A,p,r);
     }
     //思考题7.1
-    private static int hoare_partition(int[] A,int p, int r){
+    public static int hoare_partition(int[] A,int p, int r){
         int k = A[p], i = p - 1 , j = r + 1;
         while (true){
             do j--; while (A[j] > k);

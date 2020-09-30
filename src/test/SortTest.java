@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class SortTest {
+public final class SortTest {
 
     private static int[] buildRandomArray(int len , int min, int max) throws Exception {
         if(max <= min) throw new Exception("max <= min");
